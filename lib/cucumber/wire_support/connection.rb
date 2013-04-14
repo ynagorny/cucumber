@@ -4,7 +4,7 @@ require 'cucumber/wire_support/wire_protocol'
 module Cucumber
   module WireSupport
     class Connection
-      class ConnectionError < StandardError; end
+      ConnectionError = Class.new(StandardError)
 
       include WireProtocol
 
